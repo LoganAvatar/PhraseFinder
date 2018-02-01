@@ -8,7 +8,6 @@ import os
 import sys
 import string
 import nltk
-from nltk.tokenize import RegexpTokenizer
 
 # Script info
 __author__ = "Mike Davies"
@@ -26,7 +25,8 @@ def find_phrases(document):
     """
 
     # get the class to help us out
-    nltk.download('punkt')
+    # should have been done as part of docker build
+    #nltk.download('punkt')
 
     # extract sentences from the document
     print("Extracting Sentences")
